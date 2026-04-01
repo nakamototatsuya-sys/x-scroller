@@ -1,0 +1,35 @@
+/* ==========================================
+   X Post Scroller - style.css (v4)
+   ========================================== */
+
+.xscroller-btn {
+  position: fixed;
+  width: 40px;        /* 32 + 4*2 = 40px */
+  height: 40px;
+  border-radius: 10px; /* 角丸四角 */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease, transform 0.15s ease, background 0.2s ease;
+  padding: 0;
+  background: #1d9bf0;
+  color: #ffffff;
+}
+
+.xscroller-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.xscroller-btn:hover {
+  background: #1a8cd8;
+  transform: scale(1.1);
+}
+
+.xscroller-btn:active {
+  transform: scale(0.93);
+}

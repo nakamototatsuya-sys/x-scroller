@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "X Post Scroller",
+  "version": "1.0",
+  "description": "Xの投稿を1つずつスクロールできるボタンを追加します",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  }
+}
